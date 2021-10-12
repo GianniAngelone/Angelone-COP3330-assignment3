@@ -1,0 +1,16 @@
+@startuml
+class fileReader {
+    +editedFileOutput(String output_file_name, String contents)
+    +FileWriter(output_file_name)
+    +contents.replaceAll("utilize", "use")
+    +output.write(contents)
+}
+class ex45 {
+    +Scanner userInput
+    +Scanner inputFile
+    +String text
+    +StringBuilder
+    +editedFileOutput(output_file_name, contents)
+}
+fileReader <|-- ex45
+@enduml

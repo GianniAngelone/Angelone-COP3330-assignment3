@@ -1,0 +1,12 @@
+@startuml
+class dataPrinter{
++dataPrint(Scanner input)
++input.hasNextLine
+}
+class ex41{
++main(String[])
++Scanner(inputFile)
++dataPrint(inputFile)
+}
+dataPrinter <|-- ex41
+@enduml

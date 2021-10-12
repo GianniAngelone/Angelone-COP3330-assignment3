@@ -1,0 +1,19 @@
+@startuml
+class productScan {
+    +int count
+    +JSONObject json
+    +String name
+    +productSearch(String input, JSONArray subjects)
+    +input.equalsIgnoreCase(name)
+}
+
+class ex44 {
+    +JSONParser parser
+    +Object obj
+    +JSONArray subjects
+    +BufferedReader(new InputStreamReader(System.in)
+    +productSearch(input, subjects)
+}
+
+productScan <|-- ex44
+@enduml

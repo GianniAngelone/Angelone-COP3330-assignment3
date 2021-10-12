@@ -1,0 +1,29 @@
+@startuml
+class wordFrequencyFinder {
+    +Map<String, Integer> mp
+    +String[] arr
+    +String s
+    +getWordFrequency(String fileContent)
+    +mp.containsKey(s)
+    +mp.put(s)
+    +mp.get(s)
+    +mp.entrySet()
+    +entry.getKey()
+    +entry.getValue()
+}
+class fileReader {
+    +Scanner scanner
+    +String content
+    +readFileIntoString(String path, Charset encoding)
+}
+class ex46 {
+    +String filePath
+    +String fileContent
+    +readFileIntoString(filePath, StandardCharsets)
+    +fileContent.replaceAll()
+    +getWordFrequency(fileContent)
+}
+
+fileReader <|-- ex46
+wordFrequencyFinder <|-- fileReader
+@enduml
