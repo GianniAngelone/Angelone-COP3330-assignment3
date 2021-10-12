@@ -8,7 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 public class websiteMaker {
     public static Object websiteWriter(String siteName, String author, char js, char css){
-        String currentPath = System.getProperty("user.dir");
+        String currentPath = System.getProperty("user.dir"); //Gets the user directory path
         currentPath += "\\"+siteName;
         File website = new File(currentPath);
         boolean websiteCreated = website.mkdir();

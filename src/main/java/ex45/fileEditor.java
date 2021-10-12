@@ -8,7 +8,7 @@ import java.io.IOException;
 public class fileEditor {
     public static void editedFileOutput(String output_file_name, String contents) throws IOException {
         FileWriter output = new FileWriter(output_file_name);
-        contents = contents.replaceAll("utilize", "use");
+        contents = contents.replaceAll("utilize", "use"); //Replacing word 'utilize' with 'use'
         output.write(contents);
         output.close(); }
 }

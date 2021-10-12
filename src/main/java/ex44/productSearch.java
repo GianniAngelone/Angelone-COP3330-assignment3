@@ -12,7 +12,7 @@ public class productSearch {
         for (Object subject : subjects) {
             JSONObject json = (JSONObject) subject; //Will search through JSON object.
             String name = (String) json.get("name");
-            if (input.equalsIgnoreCase(name)) {
+            if (input.equalsIgnoreCase(name)) { //If json object equals name, then it will display the results
                 System.out.println("Name: " + name);
                 System.out.println("Price: " + json.get("price"));
                 System.out.println("Quantity: " + json.get("quantity"));
